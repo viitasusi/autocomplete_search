@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
 import AutocompleteSearch from './components/autocomplete_search/autocomplete_search';
+import './App.css';
 
 class App extends Component {
   render() {

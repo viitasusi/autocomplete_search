@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './api';
 import { fetchPredictions } from './api';
+import './autocomplete_search.css';
 
 
 class AutocompleteSearch extends Component {
@@ -37,9 +38,11 @@ class AutocompleteSearch extends Component {
     render() {
         return(
             <div>
-                <form>
+                <h1>Search for locations</h1>
+                <form className="autocomplete-form">
                     <input 
-                        type="text" 
+                        type="text"
+                        className="autocomplete-input" 
                         onChange={this.getProposals}           
                         name="search" 
                         value={this.state.userInput}
